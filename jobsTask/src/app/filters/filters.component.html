@@ -1,0 +1,19 @@
+<div class="filters-wrapper">
+    <h3>Sector</h3>
+    <div class="row" *ngFor="let sector of sectors">
+        <input type="checkbox" id="{{sector}}" name="sector" value="{{sector}}" (change)="filterJobs('sector', sector)" />
+        <label for="{{sector}}">{{sector}}</label><br>
+    </div>
+
+    <h3>Country</h3>
+    <div class="row" *ngFor="let country of countries">
+        <input type="checkbox" id="{{country}}" name="country" value="{{country}}" (change)="filterJobs('country', country)" />
+        <label for="{{country}}">{{country}}</label><br>
+    </div>
+
+    <h3>City</h3>
+    <div class="row" *ngFor="let city of cities">
+        <input type="checkbox" id="{{city}}" name="city" value="{{city}}" (change)="filterJobs('city', city)" />
+        <label for="{{city}}">{{city}}</label><br>
+    </div>
+</div>

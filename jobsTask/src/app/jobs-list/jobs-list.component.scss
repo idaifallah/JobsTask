@@ -1,0 +1,46 @@
+.jobs-ul {
+    padding: 0;
+}
+.job-card {
+    border: 1px solid #41719c;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 15px;
+    position: relative;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.job-details {
+    padding-left: 20px;
+    
+    > * {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+
+    > .job-sector {
+        margin-bottom: 5px;
+    }
+
+    > .job-description {
+        color: #8b8b8b;
+        margin-bottom: 0;
+    }
+}
+
+.actions {
+    position: absolute;
+    right: 0;
+
+    button {
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+    }
+}
+
+.view-Job svg g path, .view-Job svg g circle {
+    fill: #2196f3 !important;
+}
